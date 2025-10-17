@@ -47,7 +47,7 @@ export default function MobileBottomNav({ darkMode }: MobileBottomNavProps) {
           onClick={() => handleNavigation("/escrow")}
           className="flex flex-col items-center py-2 px-3 transition-colors"
         >
-          <div className={`w-6 h-6 mb-1 ${
+          <div className={`w-12 h-12 mb-1 ${
             isActiveRoute("/escrow") ? "text-[#0660D3]" : (darkMode ? "text-gray-400" : "text-gray-400")
           }`}>
             <img src="/key-square.png" alt="Escrow" className="w-full h-full" />
@@ -74,7 +74,7 @@ export default function MobileBottomNav({ darkMode }: MobileBottomNavProps) {
           onClick={() => handleNavigation("/transaction")}
           className="flex flex-col items-center py-2 px-3 transition-colors"
         >
-          <div className={`w-6 h-6 mb-1 ${
+          <div className={`w-12 h-12 mb-1 ${
             isActiveRoute("/transaction") ? "text-[#0660D3]" : (darkMode ? "text-gray-400" : "text-gray-400")
           }`}>
             <img src="/receipt-2.png" alt="Transaction" className="w-full h-full" />
